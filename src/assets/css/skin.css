@@ -753,7 +753,7 @@ section.team_section > .container {padding-top: 100px;}
 .top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap.bg_tint_dark {background-color: inherit;}
 .top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap.bg_tint_light {background-color: inherit;}
 
-.top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap.menu_bg_color_1 {background-color: #f15a23;}
+.top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap.menu_bg_color_1 {background-color: #272727;}
 .top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap.menu_bg_color_2 {background-color: #26c9c3;}
 .top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap.menu_bg_color_3 {background-color: #1e2c30;}
 
@@ -1084,7 +1084,7 @@ section.team_section > .container {padding-top: 100px;}
 .menu_left .menu_main_wrap.logo_left .content_wrap {text-align: left;}
 .menu_main_wrap.logo_left .content_wrap .menu_main_nav_area {display: inline-block; margin-left: 110px;}
 .menu_main_wrap.logo_left .content_wrap .menu_main_nav_area.menu_color_bg_1 {background-color: #1e2c30; border-top-color: #1e2c30; border-bottom-color: #1e2c30;}
-.menu_main_wrap.logo_left .content_wrap .menu_main_nav_area.menu_color_bg_2 {background-color: #f15a23; border-top-color: #f15a23; border-bottom-color: #f15a23;}
+.menu_main_wrap.logo_left .content_wrap .menu_main_nav_area.menu_color_bg_2 {background-color: #000000; border-top-color: #000000; border-bottom-color: #000000;}
 .menu_main_wrap.logo_left .content_wrap .menu_main_nav_area.menu_color_bg_3 {background-color: #26c9c3; border-top-color: #26c9c3; border-bottom-color: #26c9c3;}
 .menu_relayout .menu_main_wrap.logo_left .content_wrap .menu_main_nav_area {margin-left: 0;}
 .menu_relayout.top_panel_fixed .menu_main_wrap .logo {display: none;}
@@ -2635,10 +2635,10 @@ a.tribe-events-read-more:hover,
 	background: url(images/texture_center.png) center center no-repeat, url(images/texture_top.png) center top repeat-x, url(images/texture_slider.png) left top repeat;
 }
 
-.bg_image_11 {background-image: url(../images/750x422.png);}
-.bg_image_12 {background-image: url(../images/750x422.png);}
+.bg_image_11 {background-image: url(../images/revistauno.png);}
+.bg_image_12 {background-image: url(../images/revistados.png);}
 
-.bg_image_12 {background-image:url(../images/1920x1250.png); background-position:50% 50%;}
+.bg_image_12 {background-image:url(../images/revistados.png); background-position:50% 50%;}
 .bg_image_12 .texture_bg_1 {background-image:url(../images/texture_1.png);}
 
 .bg_image_13 {
