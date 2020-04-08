@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-revista',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RevistaComponent implements OnInit {
 
-  constructor() { }
+  revistaId: any;
+  
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+    this.revistaId = this.route.snapshot.paramMap.get('id');
   }
 
 }
