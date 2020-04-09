@@ -96,13 +96,13 @@ a {
     color: #242424;
 }
 a:hover {
-	color: #f15a23;
+	color: #f12323;
 }
 
 /* Dark styles */
 .bg_tint_dark.top_panel_wrap {
-    border-top-color: #f15a23;
-    background-color: #f15a23;
+    border-top-color: #000000;
+    background-color: #000000;
 }
 
 .top_panel_opacity_solid.top_panel_over .bg_tint_dark.top_panel_wrap {
@@ -116,8 +116,8 @@ a:hover {
 
 .menu_relayout.top_panel_opacity_transparent.top_panel_over .bg_tint_dark.top_panel_wrap,
 .responsive_menu.top_panel_opacity_transparent.top_panel_over .bg_tint_dark.top_panel_wrap {
-    border-top-color: #f15a23;
-    background-color: #f15a23;
+    border-top-color: #242424;
+    background-color: #242424;
     position: relative;
 }
 
@@ -1093,7 +1093,7 @@ section.team_section > .container {padding-top: 100px;}
 /*.menu_relayout .menu_main_wrap .logo_main {max-height: 42px;}*/
 /*.menu_relayout .menu_main_wrap .logo {margin-top: 1.55em; margin-bottom: 0.5em;}*/
 .responsive_menu .menu_main_wrap.logo_left .content_wrap .menu_main_nav_area {display: block; margin-left: 0;}
-.responsive_menu .menu_main_wrap .logo_main {max-height: 42px;}
+.responsive_menu .menu_main_wrap .logo_main {max-height: 52px;}
 .responsive_menu .menu_main_wrap .logo {margin-top: 1.55em; margin-bottom: 0.5em; z-index: 9;}
 
 /* White line under menu in the OVER mode */
@@ -1139,7 +1139,7 @@ section.team_section > .container {padding-top: 100px;}
 }
 
 .menu_main_wrap .menu_main_nav_area .menu_main_responsive .current-menu-ancestor > a {
-  background-color: #f15a23;
+  background-color: #e70129;
 }
 
 .menu_main_wrap .menu_main_nav_area .menu_main_responsive .current-menu-item > a {
@@ -2161,7 +2161,7 @@ section.team_section > .container {padding-top: 100px;}
 /* Scroll to top */
 .scroll_to_top {
 	color: #fff;
-	background-color:#26c9c3;
+	background-color:#e70129;;
 	border:none;
 }
 .scroll_to_top:hover {
@@ -2635,10 +2635,10 @@ a.tribe-events-read-more:hover,
 	background: url(images/texture_center.png) center center no-repeat, url(images/texture_top.png) center top repeat-x, url(images/texture_slider.png) left top repeat;
 }
 
-.bg_image_11 {background-image: url(../images/revistauno.png);}
-.bg_image_12 {background-image: url(../images/revistados.png);}
+.bg_image_11 {background-image: url(../images/Portadas_256h.png);}
+.bg_image_12 {background-image: url(../images/Portadas_257h.png);}
 
-.bg_image_12 {background-image:url(../images/revistados.png); background-position:50% 50%;}
+.bg_image_12 {background-image:url(../images/Portadas_257h.png); background-position:50% 50%;}
 .bg_image_12 .texture_bg_1 {background-image:url(../images/texture_1.png);}
 
 .bg_image_13 {
@@ -4616,4 +4616,9 @@ figure figcaption,
   top: 50%;
   background: url(../images/preloader.gif) no-repeat 50% 50% transparent;
   margin: -40px 0 0 -40px;
+}
+
+
+.comment-author-link:hover {
+    color: #e70129 !important;
 }

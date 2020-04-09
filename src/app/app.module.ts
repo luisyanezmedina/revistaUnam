@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RevistaComponent } from './pages/revista/revista.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogbodyComponent } from './pages/dialogbody/dialogbody.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RevistaComponent
+    RevistaComponent,
+    DialogbodyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxExtendedPdfViewerModule
+    NgxExtendedPdfViewerModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

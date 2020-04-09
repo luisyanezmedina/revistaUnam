@@ -1410,7 +1410,7 @@ section:not(.no_padding) > .container, section:not(.no_padding) > .container-flu
 }
 .menu_main_wrap .logo_fixed {
 	display:none;
-	max-height:42px;
+	max-height:52px;
 	width:auto;
 }
 .top_panel_fixed .menu_main_wrap .logo_fixed {

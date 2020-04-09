@@ -1625,7 +1625,7 @@ Very common low res
 
 	/* main slider */
 	.mainslider_1 .tp-caption.-main-text {display: none;}
-	.mainslider_1 .tp-caption.black {top: 65px !important;}
+	.mainslider_1 .tp-caption.black {top: 85px !important;}
 	.mainslider_1 .tp-caption.black > .tp-button.lightgrey.small {font-size: 9px !important; border-width: 2px !important; padding: 3px 5px !important;}
 	.mainslider_1 .tp-caption.-main-text-sub, .-main-text-sub {display: none;}
 	.mainslider_1 .tp-caption.black + .tp-caption,

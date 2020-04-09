@@ -5,14 +5,14 @@ import { RevistaComponent } from './pages/revista/revista.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
 
   },
   { path: 'revista/:id', component: RevistaComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
