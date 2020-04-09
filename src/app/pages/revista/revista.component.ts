@@ -9,6 +9,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class RevistaComponent implements OnInit {
 
   revistaId: any;
+  pdfSrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
   
   constructor(
     private route: ActivatedRoute,
@@ -19,4 +20,5 @@ export class RevistaComponent implements OnInit {
     this.revistaId = this.route.snapshot.paramMap.get('id');
   }
 
+  
 }
