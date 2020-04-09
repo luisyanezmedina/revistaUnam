@@ -5,8 +5,8 @@
 					<div class="logo">
 						<span class="logo_shape">
 							<a href="index.html">
-								<img src="assets/images/131x70.png" class="logo_main" alt="">
-								<img src="assets/images/131x70.png" class="logo_fixed" alt="">
+								<img src="assets/images/logo.png" class="logo_main" alt="">
+								<img src="assets/images/logo.png" class="logo_fixed" alt="">
 								<span class="logo_slogan"> </span>
 							</a>
 						</span>
@@ -159,7 +159,8 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								>
-									<a href='#' class='tp-button lightgrey small'>DESCARGAR</a>
+									<a [routerLink]="['/revista',1]" class='tp-button lightgrey small'>DESCARGAR</a>
+									
 							</div>
 							<!-- LAYER NR. 9 -->
 							<div class="tp-caption tp-fade"
@@ -342,7 +343,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								>
-									<a href='#' class='tp-button lightgrey small'>GET STARTED</a>
+								<a class='tp-button lightgrey small' [routerLink]="['/revista',2]">DESCÁRGALA</a>
 							</div>
 							<!-- LAYER NR. 9 -->
 							<div class="tp-caption tp-fade"
@@ -443,7 +444,7 @@
                                             
                                         </div>
                                         <h3 class="post_title">
-                                        <a routerLink="/revista" routerLinkActive="active">
+                                        <a [routerLink]="['/revista',1]">
                                             <span class="post_icon icon-pitch"> </span>
                                             <span class="post_title_text">DESCARGAR</span>
                                         </a>
@@ -474,7 +475,7 @@
                                             
                                         </div>
                                         <h3 class="post_title">
-                                        <a [routerLink]="['/revista',1]">
+                                        <a [routerLink]="['/revista',2]">
                                             <span class="post_icon icon-pitch"> </span>
                                             <span class="post_title_text">DESCARGAR</span>
                                         </a>
