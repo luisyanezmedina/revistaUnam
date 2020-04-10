@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogbodyComponent } from './pages/dialogbody/dialogbody.component';
+import { NetworkService } from './services/network.service';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +25,12 @@ import { DialogbodyComponent } from './pages/dialogbody/dialogbody.component';
     AppRoutingModule,
     NgxExtendedPdfViewerModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    NetworkService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

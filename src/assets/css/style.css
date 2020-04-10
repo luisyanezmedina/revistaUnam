@@ -1600,7 +1600,12 @@ section:not(.no_padding) > .container, section:not(.no_padding) > .container-flu
 	background:none;
 }
 .search_wrap .search_form_wrap .search_submit {
-	display:none;
+	background-color: #000000;
+	top: -0px;
+    position: absolute;
+    right: 0;
+	z-index: 9;
+	color: #ffffff;
 }
 
 /* Search results */

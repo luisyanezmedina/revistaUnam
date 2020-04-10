@@ -1,6 +1,80 @@
 
+<div *ngIf="!appear">
 
-<div *ngIf="revistaId == 1">
+    <div class="top_panel_fixed_wrap"></div>
+    <header class="top_panel_wrap bg_tint_dark bg_type_image menu_bg_color_1">
+        <div class="menu_main_wrap logo_left">
+            <div class="content_wrap clearfix">
+                <div class="logo">
+                    <span class="logo_shape">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" class="logo_main" alt="">
+                            <img src="assets/images/logo.png" class="logo_fixed" alt="">
+                            <span class="logo_slogan"> </span>
+                        </a>
+                    </span>
+                </div>
+                
+                <a href="#" class="menu_main_responsive_button icon-menu-1"> </a>
+                <nav role="navigation" class="menu_main_nav_area menu_color_bg_2">
+                    <ul id="menu_main" class="menu_main_nav">
+                        <li class="menu-item current-menu-ancestor menu-item-has-children">
+                            <a >
+                                <span>DGDC</span>
+                            </a>
+                    
+                        </li>
+                        <!-- <li class="menu-item menu-item-has-children">
+                            <a >
+                                <span>2020</span>
+                            </a>
+                            
+                        </li> -->
+                        
+                        <li id="blob">
+                            <span>
+                                <span></span>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="" style="margin-top: 5%;">
+        <div class="container">
+            <div class="row">
+                <article class="post_item post_item_404">
+                    <div class="post_content">
+                        <h1 class="page_title">Antes de continuar</h1>
+                        <h2 class="page_subtitle">Déjanos tu email</h2>
+                        <p class="page_description"> Para enviarte información importante sobre la revista
+                        </p>
+                        <div class="page_search">
+                            <div class="search_wrap search_style_flat search_opened search_fixed search_ajax" title="Open/close search form">
+                                <a href="#" class="search_icon icon-search-1"></a>
+                                <div class="search_form_wrap">
+                                    <form role="search" method="get" class="search_form" action="#">
+                                        <button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
+                                        <input type="text" class="search_field" placeholder="Agrega tu email" value="" name="s" title="To search type and hit enter"/>
+                                    </form>
+                                </div>
+                                <div class="search_results widget_area bg_tint_light">
+                                    <a class="search_results_close icon-cancel-1"></a>
+                                    <div class="search_results_content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div *ngIf="revistaId == 1 && appear">
     <ngx-extended-pdf-viewer 
     [src]="'https://luisyanezmedina.github.io/256_prueba.pdf'" 
     [showSidebarButton]="false"
@@ -24,7 +98,7 @@
     useBrowserLocale="true" height="100vh">
     </ngx-extended-pdf-viewer>
 </div>
-<div *ngIf="revistaId == 2">
+<div *ngIf="revistaId == 2 && appear">
     
     <ngx-extended-pdf-viewer 
     [src]="'https://luisyanezmedina.github.io/257_comprimido_2.pdf'" 

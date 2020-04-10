@@ -1890,10 +1890,10 @@ section.team_section > .container {padding-top: 100px;}
 .post_item_404 .page_subtitle {
     font-weight: 700;
     text-transform: uppercase;
-	color: #26c9c3;
+	color: #e70129;
 }
 .error404.top_panel_style_light .page_content_wrap {
-	background-color:#26c9c3;
+	background-color:#e70129;
 	background-image: url(../images/bg_over.png);
 	background-repeat:repeat-x;
 	background-position:left top;
@@ -4621,4 +4621,10 @@ figure figcaption,
 
 .comment-author-link:hover {
     color: #e70129 !important;
+}
+
+.enviaEmail {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
 }
