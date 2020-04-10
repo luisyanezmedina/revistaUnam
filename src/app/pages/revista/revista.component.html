@@ -1,6 +1,6 @@
 
 <div *ngIf="!appear">
-
+<div class="fondo"></div>
     <div class="top_panel_fixed_wrap"></div>
     <header class="top_panel_wrap bg_tint_dark bg_type_image menu_bg_color_1">
         <div class="menu_main_wrap logo_left">
@@ -20,7 +20,7 @@
                     <ul id="menu_main" class="menu_main_nav">
                         <li class="menu-item current-menu-ancestor menu-item-has-children">
                             <a >
-                                <span>DGDC</span>
+                                <span>UNAM-DGDC</span>
                             </a>
                     
                         </li>
@@ -48,7 +48,7 @@
                 <article class="post_item post_item_404">
                     <div class="post_content">
                     
-                        <h2 class="page_subtitle">Por favor déjanos tu email</h2>
+                        <h2 class="page_subtitle" style="color: #339999 !important;">Por favor déjanos tu email</h2>
                         <p class="page_description"> Para enviarte información importante sobre la revista
                         </p>
                         <div class="page_search">
@@ -56,7 +56,7 @@
                                 
                                 <div class="search_form_wrap">
                                 
-                                    <button id="submit" (click)="sendmail(titleInput.value)" class="search_submit icon-zoom-1"></button>
+                                    <button id="submit" (click)="sendmail(titleInput.value)" class="search_submit icon-mail-1"></button>
                                     <input type="text" class="search_field"
                                     #titleInput
                                     placeholder="Agrega tu email"/>
