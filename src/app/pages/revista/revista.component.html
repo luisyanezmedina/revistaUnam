@@ -53,16 +53,21 @@
                         </p>
                         <div class="page_search">
                             <div class="search_wrap search_style_flat search_opened search_fixed search_ajax" title="Open/close search form">
-                                <a href="#" class="search_icon icon-search-1"></a>
+                                
                                 <div class="search_form_wrap">
                                 
-                                        <button id="submit" (click)="sendmail(titleInput.value)" class="search_submit icon-zoom-1"></button>
-                                        <input type="text" class=""
-                                        #titleInput
-                                        
-                                        placeholder="Agrega tu email"/>
+                                    <button id="submit" (click)="sendmail(titleInput.value)" class="search_submit icon-zoom-1"></button>
+                                    <input type="text" class="search_field"
+                                    #titleInput
+                                    placeholder="Agrega tu email"/>
                                    
                                 </div>
+                                <div class="cajaerror"
+                                *ngIf="error != ''"
+                                style="float: left;
+                                margin-top: 30px;
+                                color: red;"
+                                > {{error }}</div>
                                 <div class="search_results widget_area bg_tint_light">
                                     <a class="search_results_close icon-cancel-1"></a>
                                     <div class="search_results_content"></div>

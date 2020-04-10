@@ -17,6 +17,7 @@ export class RevistaComponent implements OnInit {
   appear: boolean = false;
 
   regularExpr: RegExp;
+  error: string = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -50,6 +51,8 @@ export class RevistaComponent implements OnInit {
           console.log(err);
         }
       );
+    }else {
+      this.error = "Favor de escribir un email válido";
     }
   
     
