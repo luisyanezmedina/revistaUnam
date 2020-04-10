@@ -38,7 +38,7 @@ export class RevistaComponent implements OnInit {
 
   sendmail(email:string) {
 
-
+//console.log(email);
     if (this.regExpr(email)) {
       //console.log('seenviarmeial');
       this.network.sendEmail(email)

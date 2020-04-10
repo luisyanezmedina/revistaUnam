@@ -16,6 +16,7 @@ export class NetworkService {
   ) { 
     this.currentUserSubject = new BehaviorSubject<any>(JSON.parse(localStorage.getItem('currentUser')));
     this.currentUser = this.currentUserSubject.asObservable();
+
   }
 
   public get currentUserValue(): any {
@@ -23,8 +24,10 @@ export class NetworkService {
   }
 
   sendEmail(email) {
+    var formData: any = new FormData();
+    formData.append("email", email);
 
-    return this.http.post<any>('http://revistadigital.comoves.unam.mx/php/email.php', { email })
+    return this.http.post<any>('http://revistadigital.comoves.unam.mx/php/email.php', formData)
       .pipe(map(user => {
         // login successful if there's a jwt token in the response
         if (user && user.data) {
