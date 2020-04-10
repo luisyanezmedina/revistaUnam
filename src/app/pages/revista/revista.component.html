@@ -55,10 +55,13 @@
                             <div class="search_wrap search_style_flat search_opened search_fixed search_ajax" title="Open/close search form">
                                 <a href="#" class="search_icon icon-search-1"></a>
                                 <div class="search_form_wrap">
-                                    <form role="search" method="get" class="search_form" action="#">
-                                        <button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
-                                        <input type="text" class="search_field" placeholder="Agrega tu email" value="" name="s" title="To search type and hit enter"/>
-                                    </form>
+                                
+                                        <button id="submit" (click)="sendmail(titleInput.value)" class="search_submit icon-zoom-1"></button>
+                                        <input type="text" class=""
+                                        #titleInput
+                                        
+                                        placeholder="Agrega tu email"/>
+                                   
                                 </div>
                                 <div class="search_results widget_area bg_tint_light">
                                     <a class="search_results_close icon-cancel-1"></a>

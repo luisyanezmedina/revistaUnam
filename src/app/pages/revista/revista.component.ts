@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { NetworkService } from '../../services/network.service';
 import { first } from 'rxjs/operators';
 
+
 @Component({
   selector: 'app-revista',
   templateUrl: './revista.component.html',
@@ -11,8 +12,12 @@ import { first } from 'rxjs/operators';
 })
 export class RevistaComponent implements OnInit {
 
+  emailInput: RegExp;
   revistaId: any;
   appear: boolean = false;
+
+  regularExpr: RegExp;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -30,16 +35,33 @@ export class RevistaComponent implements OnInit {
     this.revistaId = this.route.snapshot.paramMap.get('id');
   }
 
-  sendmail() {
-    this.network.sendEmail('yo.com')
-    .pipe(first())
-    .subscribe(
-      data => {
-        console.log(data);
-      }, err => {
-        console.log(err);
-      }
-    );
+  sendmail(email:string) {
+
+
+    if (this.regExpr(email)) {
+      //console.log('seenviarmeial');
+      this.network.sendEmail(email)
+      .pipe(first())
+      .subscribe(
+        data => {
+          console.log(data);
+          this.appear = true;
+        }, err => {
+          console.log(err);
+        }
+      );
+    }
+  
+    
+  
+
+
+  }
+
+  regExpr(expresion: string) {
+
+    this.regularExpr = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    return this.regularExpr.test(expresion);
   }
   
-}
+}//class

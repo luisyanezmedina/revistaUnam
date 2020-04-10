@@ -53,18 +53,7 @@ function themerex_init_shortcodes(container) {
 		});
 	}
 
-	// Contact form
-	if (container.find('.sc_contact_form:not(.inited):not(.contact_form_1) form').length > 0) {
-		container.find(".sc_contact_form:not(.inited) form")
-			.addClass('inited')
-			.submit(function(e) {
-				"use strict";
-				themerex_contact_form_validate(jQuery(this));
-				e.preventDefault();
-				return false;
-			});
-	}
-
+	
 	//Countdown
 	if (container.find('.sc_countdown:not(.inited)').length > 0) {
 		container.find('.sc_countdown:not(.inited)')
@@ -97,48 +86,7 @@ function themerex_init_shortcodes(container) {
 			});
 	}
 
-	// Emailer form
-	if (container.find('.sc_emailer:not(.inited)').length > 0) {
-		container.find(".sc_emailer:not(.inited)")
-			.addClass('inited')
-			.find('.sc_emailer_button')
-			.on('click', function(e) {
-				"use strict";
-				var form = jQuery(this).parents('form');
-				var parent = jQuery(this).parents('.sc_emailer');
-				if (parent.hasClass('sc_emailer_opened')) {
-					if (form.length>0 && form.find('input').val()!='') {
-						var group = jQuery(this).data('group');
-						var email = form.find('input').val();
-						var regexp = new RegExp(THEMEREX_GLOBALS['email_mask']);
-						if (!regexp.test(email)) {
-							form.find('input').get(0).focus();
-							themerex_message_warning(THEMEREX_GLOBALS['strings']['email_not_valid']);
-						} else {
-							jQuery.post(THEMEREX_GLOBALS['ajax_url'], {
-								action: 'emailer_submit',
-								nonce: THEMEREX_GLOBALS['ajax_nonce'],
-								group: group,
-								email: email
-							}).done(function(response) {
-								var rez = JSON.parse(response);
-								if (rez.error === '') {
-									themerex_message_info(THEMEREX_GLOBALS['strings']['email_confirm'].replace('%s', email));
-									form.find('input').val('');
-								} else {
-									themerex_message_warning(rez.error);
-								}
-							});
-						}
-					} else
-						form.get(0).submit();
-				} else {
-					parent.addClass('sc_emailer_opened');
-				}
-				e.preventDefault();
-				return false;
-			});
-	}
+	
 
 	// Googlemap init
 	if (container.find('.sc_googlemap:not(.inited)').length > 0) {
@@ -222,13 +170,7 @@ function themerex_init_shortcodes(container) {
 				e.preventDefault();
 				return false;
 			});
-			jQuery(this).on('click', '.search_submit,.search_more', function(e) {
-				"use strict";
-				if (jQuery(this).parents('.search_wrap').find('.search_field').val() != '')
-					jQuery(this).parents('.search_wrap').find('.search_form_wrap form').get(0).submit();
-				e.preventDefault();
-				return false;
-			});
+			
 			if (jQuery(this).hasClass('search_ajax')) {
 				var ajax_timer = null;
 				jQuery(this).find('.search_field').keyup(function(e) {
