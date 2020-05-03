@@ -1,6 +1,6 @@
 jQuery(window).load(function() {
     "use strict";
-    preloader();
+    // preloader();
 })
 
 jQuery(document).ready(function() {
