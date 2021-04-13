@@ -88,6 +88,10 @@ export class RevistaComponent implements OnInit {
       case "13":
         this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/268/268_portalnuevo.pdf";
         break;
+
+      case "14":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/269/269_portalnuevo.pdf";
+        break;
     
       default:
         console.log("default");
