@@ -19,6 +19,8 @@ export class RevistaComponent implements OnInit {
   regularExpr: RegExp;
   error: string = '';
 
+  revistaSrc:string;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -33,7 +35,63 @@ export class RevistaComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.revistaId = this.route.snapshot.paramMap.get('id');
+    // this.revistaId = this.route.snapshot.paramMap.get('id');
+    switch (this.route.snapshot.paramMap.get('id')) {
+      case "1":
+        this.revistaSrc = "https://luisyanezmedina.github.io/256_prueba.pdf";
+        break;
+    
+      case "2":
+        this.revistaSrc = "https://luisyanezmedina.github.io/257_comprimido_2.pdf";
+        break;
+
+      case "3":
+        this.revistaSrc = "https://luisyanezmedina.github.io/258_mipeiper.pdf";
+        break;
+      
+      case "4":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/259/259_portalnuevo.pdf";
+        break;
+
+      case "5":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/260/260_portalnuevo.pdf";
+        break;
+
+      case "6":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/261/261_portalnuevo.pdf";
+        break;
+
+      case "7":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/262/262_portalnuevo.pdf";
+        break;
+      
+      case "8":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/263/263_portalnuevook.pdf";
+        break;
+
+      case "9":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/264/Portada_CVD_264.pdf";
+        break;
+
+      case "10":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/265/265_portalnuevo.pdf";
+        break;
+
+      case "11":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/266/266_portalnuevo.pdf";
+        break;
+
+      case "12":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/267/267_portalnuevo.pdf";
+        break;
+
+      case "13":
+        this.revistaSrc = "http://revistadigital.comoves.unam.mx/revistas/268/268_portalnuevo.pdf";
+        break;
+    
+      default:
+        console.log("default");
+    }
   }
 
   sendmail(email:string) {

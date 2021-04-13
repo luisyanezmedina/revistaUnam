@@ -82,9 +82,9 @@
 </div>
 
 
-<div *ngIf="revistaId == 1 && appear">
+<div *ngIf="appear">
     <ngx-extended-pdf-viewer 
-    [src]="'https://luisyanezmedina.github.io/256_prueba.pdf'" 
+    [src]="revistaSrc" 
     [showSidebarButton]="false"
     [showFindButton]="true"
     [showPagingButtons]="true"
@@ -106,6 +106,8 @@
     useBrowserLocale="true" height="100vh">
     </ngx-extended-pdf-viewer>
 </div>
+
+<!-- 
 <div *ngIf="revistaId == 2 && appear">
     
     <ngx-extended-pdf-viewer 
@@ -243,3 +245,4 @@
 
     
 </div>
+-->

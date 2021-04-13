@@ -2641,6 +2641,14 @@ a.tribe-events-read-more:hover,
 .bg_image_14_rev {background-image: url(../images/Portada_259.png);}
 .bg_image_15_rev {background-image: url(../images/Portada_CVD_260.png);}
 .bg_image_16_rev {background-image: url(../images/Portada_CVD_261.jpg);}
+.bg_image_17_rev {background-image: url(../images/Portada_CVD_262.jpg);}
+.bg_image_18_rev {background-image: url(../images/Portada_CVD_263.jpg);}
+.bg_image_19_rev {background-image: url(../images/Portada_CVD_264.jpg);}
+.bg_image_20_rev {background-image: url(../images/Portada_CVD_265.jpg);}
+.bg_image_21_rev {background-image: url(../images/Portada_CVD_266.jpg);}
+.bg_image_22_rev {background-image: url(../images/Portada_CVD_267.jpg);}
+.bg_image_268_rev {background-image: url(../images/Portada_CVD_268.jpg);}
+
 
 .bg_image_12 {background-image:url(../images/Portadas_257h.png); background-position:50% 50%;}
 .bg_image_12 .texture_bg_1 {background-image:url(../images/texture_1.png);}
@@ -2657,6 +2665,7 @@ a.tribe-events-read-more:hover,
 .bg_image_16 {padding-top:3%;padding-right:3%;padding-bottom:24%;padding-left:13%;background-image: url(../images/550x401.png);}
 .bg_image_17 {background-image: url(../images/750x422.png);}
 .bg_image_18 {background-image: url(../images/750x422.png);}
+
 
 
 /* 15. Shortcodes
@@ -4641,4 +4650,16 @@ figure figcaption,
     top: 0;
     left: 0;
     z-index: -99;
+}
+
+.articulos{
+    width: 30%;
+}
+@media (max-width: 700px) {
+    .articulos {
+      width: 100%;
+    }
+  }
+.articulos img{
+    width: 100%;
 }
